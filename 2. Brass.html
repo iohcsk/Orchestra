@@ -17,16 +17,26 @@
       color:black;
       text-decoration: none;
     }
+    .saw {
+      color:gray;
+    }
+    .active {
+      color:red;
+    }
+    h1 {
+       font-size: 50px;
+       text-align: center;
+    }
   </style>
 </head>
 <body>
-  <h1><a href="index.html">Orchestra</a></h1>
+  <h1><a href="index.html" class="saw">Orchestra</a></h1>
   <ol>
-    <li><a href="1. Woodwinds.html">Woodwinds</a></li>
-    <li><a href="2. Brass.html" style="color:red;text-decoration:underline;">Brass</a></li>
-    <li><a href="3. Percussions.html">Percussions</a></li>
-    <li><a href="4. Piano, Harp.html">Piano, Harp</a></li>
-    <li><a href="5. Strings.html">Strings</a></li>
+    <li><a href="1. Woodwinds.html" class="saw">Woodwinds</a></li>
+    <li><a href="2. Brass.html" class="saw active">Brass</a></li>
+    <li><a href="3. Percussions.html" class="saw">Percussions</a></li>
+    <li><a href="4. Piano, Harp.html" class="saw">Piano, Harp</a></li>
+    <li><a href="5. Strings.html" class="saw">Strings</a></li>
   </ol>
   <h2 style="margin-top:70px;">Brass</h2>
   <img src="Brass.jpeg" width="90%">
