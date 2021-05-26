@@ -13,40 +13,73 @@
     gtag('config', 'G-C69Z03GNS1');
   </script>
   <style>
-    a {
-      color:black;
-      text-decoration: none;
+  body {
+    margin: 0;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  .active {
+    color:red;
+  }
+  h1 {
+     font-size: 50px;
+     text-align: center;
+     border-bottom: 1px solid gray;
+     margin: 0;
+     padding: 20px;
+  }
+  ol {
+     border-right: 1px solid gray;
+     margin: 0;
+     padding: 20px;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol {
+    padding-left: 33px;
+  }
+  #article {
+    padding-left: 25px;
+  }
+  @media(max-width:800px) {
+    #grid {
+      display: block;
     }
-    .saw {
-      color:gray;
-    }
-    .active {
-      color:red;
+    ol {
+       border-right:none;
     }
     h1 {
-       font-size: 50px;
-       text-align: center;
+        border-bottom: none;
     }
+  }
   </style>
 </head>
 <body>
   <h1><a href="index.html" class="saw">Orchestra</a></h1>
-  <ol>
-    <li><a href="1. Woodwinds.html" class="saw">Woodwinds</a></li>
-    <li><a href="2. Brass.html" class="saw">Brass</a></li>
-    <li><a href="3. Percussions.html" class="saw active">Percussions</a></li>
-    <li><a href="4. Piano, Harp.html" class="saw">Piano, Harp</a></li>
-    <li><a href="5. Strings.html" class="saw">Strings</a></li>
-  </ol>
-  <h2 style="margin-top:70px;">Percussions</h2>
-  <img src="Percussions.jpeg" width="90%">
-  <p>
-    A percussion instrument is a musical instrument that is sounded by being struck or scraped by a beater including attached or enclosed beaters or rattles struck, scraped or rubbed by hand or struck against another similar instrument. Excluding zoomusicological instruments and the human voice, the percussion family is believed to include the oldest musical instruments.
-  </p>
-  <p>
-    The percussion section of an orchestra most commonly contains instruments such as the timpani, snare drum, bass drum, cymbals, triangle and tambourine. However, the section can also contain non-percussive instruments, such as whistles and sirens, or a blown conch shell. Percussive techniques can even be applied to the human body itself, as in body percussion. On the other hand, keyboard instruments, such as the celesta, are not normally part of the percussion section, but keyboard percussion instruments such as the glockenspiel and xylophone (which do not have piano keyboards) are included.
-  <p>
-    Percussion instruments are most commonly divided into two classes: pitched percussion instruments, which produce notes with an identifiable pitch, and unpitched percussion instruments, which produce notes or sounds in an indefinite pitch.
-  </p>
+  <div id="grid">
+    <ol>
+      <li><a href="1. Woodwinds.html" class="saw">Woodwinds</a></li>
+      <li><a href="2. Brass.html" class="saw">Brass</a></li>
+      <li><a href="3. Percussions.html" class="saw active">Percussions</a></li>
+      <li><a href="4. Piano, Harp.html" class="saw">Piano, Harp</a></li>
+      <li><a href="5. Strings.html" class="saw">Strings</a></li>
+    </ol>
+    <div id="article">
+      <h2>Percussions</h2>
+      <p>
+        A percussion instrument is a musical instrument that is sounded by being struck or scraped by a beater including attached or enclosed beaters or rattles struck, scraped or rubbed by hand or struck against another similar instrument. Excluding zoomusicological instruments and the human voice, the percussion family is believed to include the oldest musical instruments.
+      </p>
+      <p>
+        The percussion section of an orchestra most commonly contains instruments such as the timpani, snare drum, bass drum, cymbals, triangle and tambourine. However, the section can also contain non-percussive instruments, such as whistles and sirens, or a blown conch shell. Percussive techniques can even be applied to the human body itself, as in body percussion. On the other hand, keyboard instruments, such as the celesta, are not normally part of the percussion section, but keyboard percussion instruments such as the glockenspiel and xylophone (which do not have piano keyboards) are included.
+      <p>
+        Percussion instruments are most commonly divided into two classes: pitched percussion instruments, which produce notes with an identifiable pitch, and unpitched percussion instruments, which produce notes or sounds in an indefinite pitch.
+      </p>
+    </div>
+  </div>
+    <img src="Percussions.jpeg" width="100%">
 </body>
 </html>

@@ -13,41 +13,74 @@
     gtag('config', 'G-C69Z03GNS1');
   </script>
   <style>
-    a {
-      color:black;
-      text-decoration: none;
+  body {
+    margin: 0;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  .active {
+    color:red;
+  }
+  h1 {
+     font-size: 50px;
+     text-align: center;
+     border-bottom: 1px solid gray;
+     margin: 0;
+     padding: 20px;
+  }
+  ol {
+     border-right: 1px solid gray;
+     margin: 0;
+     padding: 20px;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol {
+    padding-left: 33px;
+  }
+  #article {
+    padding-left: 25px;
+  }
+  @media(max-width:800px) {
+    #grid {
+      display: block;
     }
-    .saw {
-      color:gray;
-    }
-    .active {
-      color:red;
+    ol {
+       border-right:none;
     }
     h1 {
-       font-size: 50px;
-       text-align: center;
+        border-bottom: none;
     }
+  }
   </style>
 </head>
 <body>
-  <h1><a href="index.html" class="saw">Orchestra</a></h1>
-  <ol>
-    <li><a href="1. Woodwinds.html" class="saw">Woodwinds</a></li>
-    <li><a href="2. Brass.html" class="saw active">Brass</a></li>
-    <li><a href="3. Percussions.html" class="saw">Percussions</a></li>
-    <li><a href="4. Piano, Harp.html" class="saw">Piano, Harp</a></li>
-    <li><a href="5. Strings.html" class="saw">Strings</a></li>
-  </ol>
-  <h2 style="margin-top:70px;">Brass</h2>
-  <img src="Brass.jpeg" width="90%">
-  <p>
-    A brass instrument is a musical instrument that produces sound by sympathetic vibration of air in a tubular resonator in sympathy with the vibration of the player's lips. Brass instruments are also called labrosones or labrophones, from Latin and Greek elements meaning 'lip' and 'sound'.
-  </p>
-  <p>
-    There are several factors involved in producing different pitches on a brass instrument. Slides, valves, crooks (though they are rarely used today), or keys are used to change vibratory length of tubing, thus changing the available harmonic series, while the player's embouchure, lip tension and air flow serve to select the specific harmonic produced from the available series.
-  </p>
-  <p>
-    The view of most scholars (see organology) is that the term "brass instrument" should be defined by the way the sound is made, as above, and not by whether the instrument is actually made of brass. Thus one finds brass instruments made of wood, like the alphorn, the cornett, the serpent and the didgeridoo, while some woodwind instruments are made of brass, like the saxophone.
-  </p>
+  <h1><a href="index.html">Orchestra</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1. Woodwinds.html">Woodwinds</a></li>
+      <li><a href="2. Brass.html">Brass</a></li>
+      <li><a href="3. Percussions.html">Percussions</a></li>
+      <li><a href="4. Piano, Harp.html">Piano, Harp</a></li>
+      <li><a href="5. Strings.html">Strings</a></li>
+    </ol>
+    <div id="article">
+      <h2>Brass</h2>
+      <p>
+        A brass instrument is a musical instrument that produces sound by sympathetic vibration of air in a tubular resonator in sympathy with the vibration of the player's lips. Brass instruments are also called labrosones or labrophones, from Latin and Greek elements meaning 'lip' and 'sound'.
+      </p>
+      <p>
+        There are several factors involved in producing different pitches on a brass instrument. Slides, valves, crooks (though they are rarely used today), or keys are used to change vibratory length of tubing, thus changing the available harmonic series, while the player's embouchure, lip tension and air flow serve to select the specific harmonic produced from the available series.
+      </p>
+      <p>
+        The view of most scholars (see organology) is that the term "brass instrument" should be defined by the way the sound is made, as above, and not by whether the instrument is actually made of brass. Thus one finds brass instruments made of wood, like the alphorn, the cornett, the serpent and the didgeridoo, while some woodwind instruments are made of brass, like the saxophone.
+      </p>
+    </div>
+  </div>
+      <img src="Brass.jpeg" width="100%">
 </body>
 </html>
