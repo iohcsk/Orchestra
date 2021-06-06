@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Woodwind Instruments</h2>
+    <script>
+      var woodwinds=['Flute', 'Oboe', 'Clarinet', 'Bassoon'];
+    </script>
+    <h2>Woodwind Instruments</h2>
+    <script>
+      function LinksSetColor(color){
+        var alist=document.querySelectorAll('a');
+        var i=0;
+        while(i<alist.length) {
+          alist[i].style.color=color;
+          i=i+1;
+        }
+      }
+
+      function BodySetColor(color) {
+        document.querySelector('body').style.color=color;
+      }
+
+      function BodySetBackgroundColor(color) {
+        document.querySelector('body').style.backgroundColor=color;
+      }
+
+      function NightDayHandler(self){
+        var target=document.querySelector('body');
+        if(self.value==='Night') {
+          Body.setBackgroundColor('black');
+          Body.setColor('white');
+          self.value='Day';
+
+          Links.setColor('powderblue');
+
+        } else {
+          Body.setBackgroundColor('white')
+          Body.setColor('black');
+          self.value='Night';
+
+          Links.setColor('blue');
+      }
+    }
+    </script>
+      <input type="button" value="Night" onclick="
+        NightDayHandler(this);
+      ">
+    <ol>
+      <li><a href="https://a.com">Flute</a></li>
+      <li><a href="https://b.com">Oboe</a></li>
+      <li><a href="https://c.com">Clarinet</a></li>
+      <li><a href="https://d.com">Bassoon</a></li>
+    </ol>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <script>
+      function sum(a,b) {
+        document.write(a+b+'<br>');
+      }
+      sum(1,2);
+      sum(3,4);
+
+      document.write('<br>');
+
+      function sum2(left,right) {
+        return left-right
+      }
+      document.write(sum2(9,8)+'<br>');
+      document.write('<span style="background-color:red">'+sum2(9,7)+'</span>');
+      document.write('<div style="color:red">'+sum2(9,6)+'</div>');
+
+    document.write('<br>');
+
+      var Woodwinds={
+        S : "Flute",
+        A : "Oboe",
+        T : "Clarinet",
+        B : "Bassoon"
+      };
+      document.write("1. " +Woodwinds.S+"<br>");
+      document.write("2. " +Woodwinds.A+"<br>");
+      document.write("3. " +Woodwinds.T+"<br>");
+      document.write("4. " +Woodwinds.B+"<br>");
+      Woodwinds["high S"]="Piccolo"
+      document.write("(+) "+Woodwinds["high S"]+"<br>");
+    </script>
+  </body>
+</html>
