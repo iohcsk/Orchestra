@@ -88,6 +88,16 @@
       document.write("4. " +Woodwinds.B+"<br>");
       Woodwinds["high S"]="Piccolo"
       document.write("(+) "+Woodwinds["high S"]+"<br>");
+
+      for(var keys in Woodwinds) {
+        document.write(keys+' : '+Woodwinds[keys]+'<br>');
+      }
+
+      Woodwinds.showAll=function() {
+        for(var keys in this) {
+          document.write(keys + ' : ' + this[keys] + '<br>');
+        }
+      }
     </script>
   </body>
 </html>
